@@ -1,0 +1,486 @@
+name,scale,offset,is_float,minimum,maximum,choices,start,length,byte_order,is_signed,initial,unit,receivers,comments,message_name,message_id,dbc_name
+DAS_steeringHapticRequest,1.0,0.0,False,,,"OrderedDict([(1, 'ACTIVE'), (0, 'IDLE')])",7,1,big_endian,False,,,['EPAS'],,DAS_steeringControl,1160,tesla_can.dbc
+DAS_steeringAngleRequest,0.1,-1638.35,False,-1638.35,1638.35,"OrderedDict([(16384, 'ZERO_ANGLE')])",6,15,big_endian,False,,deg,['EPAS'],,DAS_steeringControl,1160,tesla_can.dbc
+DAS_steeringControlType,1.0,0.0,False,,,"OrderedDict([(1, 'ANGLE_CONTROL'), (3, 'DISABLED'), (0, 'NONE'), (2, 'RESERVED')])",23,2,big_endian,False,,,['EPAS'],,DAS_steeringControl,1160,tesla_can.dbc
+DAS_steeringControlCounter,1.0,0.0,False,,,,19,4,big_endian,False,,,['EPAS'],,DAS_steeringControl,1160,tesla_can.dbc
+DAS_steeringControlChecksum,1.0,0.0,False,,,,31,8,big_endian,False,,,['EPAS'],,DAS_steeringControl,1160,tesla_can.dbc
+DAS_setSpeed,0.1,0.0,False,0.0,409.4,"OrderedDict([(4095, 'SNA')])",0,12,little_endian,False,,kph,['NEO'],,DAS_control,697,tesla_can.dbc
+DAS_accState,1.0,0.0,False,,,"OrderedDict([(15, 'FAULT_SNA'), (13, 'ACC_CANCEL_GENERIC_SILENT'), (11, 'APC_SELFPARK_START'), (10, 'APC_UNPARK_COMPLETE'), (9, 'APC_PAUSE'), (8, 'APC_ABORT'), (7, 'APC_COMPLETE'), (6, 'APC_FORWARD'), (5, 'APC_BACKWARD'), (4, 'ACC_ON'), (3, 'ACC_HOLD'), (0, 'ACC_CANCEL_GENERIC')])",12,4,little_endian,False,,,['NEO'],,DAS_control,697,tesla_can.dbc
+DAS_aebEvent,1.0,0.0,False,0.0,3.0,"OrderedDict([(3, 'AEB_SNA'), (2, 'AEB_FAULT'), (1, 'AEB_ACTIVE'), (0, 'AEB_NOT_ACTIVE')])",16,2,little_endian,False,,,['NEO'],,DAS_control,697,tesla_can.dbc
+DAS_jerkMin,0.03,-15.232,False,-15.232,0.098,"OrderedDict([(511, 'SNA')])",18,9,little_endian,False,,m/s^3,['NEO'],,DAS_control,697,tesla_can.dbc
+DAS_jerkMax,0.059,0.0,False,0.0,15.045,"OrderedDict([(255, 'SNA')])",27,8,little_endian,False,,m/s^3,['NEO'],,DAS_control,697,tesla_can.dbc
+DAS_accelMin,0.04,-15.0,False,-15.0,5.44,"OrderedDict([(511, 'SNA')])",35,9,little_endian,False,,m/s^2,['NEO'],,DAS_control,697,tesla_can.dbc
+DAS_accelMax,0.04,-15.0,False,-15.0,5.44,"OrderedDict([(511, 'SNA')])",44,9,little_endian,False,,m/s^2,['NEO'],,DAS_control,697,tesla_can.dbc
+DAS_controlCounter,1.0,0.0,False,,,,53,3,little_endian,False,,,['NEO'],,DAS_control,697,tesla_can.dbc
+DAS_controlChecksum,1.0,0.0,False,,,,56,8,little_endian,False,,,['NEO'],,DAS_control,697,tesla_can.dbc
+GTW_epasEmergencyOn,1.0,0.0,False,-1.0,2.0,"OrderedDict([(1, 'EMERGENCY_POWER'), (0, 'NONE')])",7,1,big_endian,False,,,['NEO'],,GTW_epasControl,257,tesla_can.dbc
+GTW_epasPowerMode,1.0,0.0,False,4.0,14.0,"OrderedDict([(0, 'DRIVE_OFF'), (1, 'DRIVE_ON'), (3, 'LOAD_SHED'), (2, 'SHUTTING_DOWN'), (15, 'SNA')])",6,4,big_endian,False,,,['NEO'],,GTW_epasControl,257,tesla_can.dbc
+GTW_epasTuneRequest,1.0,0.0,False,-1.0,8.0,"OrderedDict([(1, 'DM_COMFORT'), (3, 'DM_SPORT'), (2, 'DM_STANDARD'), (0, 'FAIL_SAFE_DEFAULT'), (4, 'RWD_COMFORT'), (6, 'RWD_SPORT'), (5, 'RWD_STANDARD'), (7, 'SNA')])",2,3,big_endian,False,,,['NEO'],,GTW_epasControl,257,tesla_can.dbc
+GTW_epasControlType,1.0,0.0,False,-1.0,4.0,"OrderedDict([(0, 'WITHOUT'), (1, 'WITH_ANGLE'), (3, 'WITH_BOTH'), (2, 'WITH_TORQUE')])",15,2,big_endian,False,,,['NEO'],,GTW_epasControl,257,tesla_can.dbc
+GTW_epasLDWEnabled,1.0,0.0,False,-1.0,2.0,"OrderedDict([(1, 'ALLOWED'), (0, 'INHIBITED')])",12,1,big_endian,False,,,['NEO'],,GTW_epasControl,257,tesla_can.dbc
+GTW_epasControlCounter,1.0,0.0,False,0.0,15.0,,11,4,big_endian,False,,,['NEO'],,GTW_epasControl,257,tesla_can.dbc
+GTW_epasControlChecksum,1.0,0.0,False,0.0,255.0,,23,8,big_endian,False,,,['NEO'],,GTW_epasControl,257,tesla_can.dbc
+EPAS_currentTuneMode,1.0,0.0,False,8.0,15.0,"OrderedDict([(1, 'DM_COMFORT'), (3, 'DM_SPORT'), (2, 'DM_STANDARD'), (0, 'FAIL_SAFE_DEFAULT'), (4, 'RWD_COMFORT'), (6, 'RWD_SPORT'), (5, 'RWD_STANDARD'), (7, 'UNAVAILABLE')])",7,4,big_endian,False,,,['NEO'],,EPAS_sysStatus,880,tesla_can.dbc
+EPAS_steeringReduced,1.0,0.0,False,-1.0,2.0,"OrderedDict([(0, 'NORMAL_ASSIST'), (1, 'REDUCED_ASSIST')])",3,1,big_endian,False,,,['NEO'],,EPAS_sysStatus,880,tesla_can.dbc
+EPAS_steeringFault,1.0,0.0,False,-1.0,2.0,"OrderedDict([(1, 'FAULT'), (0, 'NO_FAULT')])",2,1,big_endian,False,,,['NEO'],,EPAS_sysStatus,880,tesla_can.dbc
+EPAS_steeringRackForce,50.0,-25575.0,False,,,"OrderedDict([(1022, 'NOT_IN_SPEC'), (1023, 'SNA')])",1,10,big_endian,False,,N,['NEO'],,EPAS_sysStatus,880,tesla_can.dbc
+EPAS_eacErrorCode,1.0,0.0,False,-1.0,16.0,"OrderedDict([(14, 'EAC_ERROR_EPB_INHIBIT'), (3, 'EAC_ERROR_HANDS_ON'), (7, 'EAC_ERROR_HIGH_ANGLE_RATE_REQ'), (9, 'EAC_ERROR_HIGH_ANGLE_RATE_SAFETY'), (6, 'EAC_ERROR_HIGH_ANGLE_REQ'), (8, 'EAC_ERROR_HIGH_ANGLE_SAFETY'), (10, 'EAC_ERROR_HIGH_MMOT_SAFETY'), (11, 'EAC_ERROR_HIGH_TORSION_SAFETY'), (0, 'EAC_ERROR_IDLE'), (12, 'EAC_ERROR_LOW_ASSIST'), (2, 'EAC_ERROR_MAX_SPEED'), (1, 'EAC_ERROR_MIN_SPEED'), (13, 'EAC_ERROR_PINION_VEL_DIFF'), (4, 'EAC_ERROR_TMP_FAULT'), (5, 'EAR_ERROR_MAX_STEER_DELTA'), (15, 'SNA')])",23,4,big_endian,False,,,['NEO'],,EPAS_sysStatus,880,tesla_can.dbc
+EPAS_torsionBarTorque,0.01,-20.5,False,,,"OrderedDict([(0, 'SEE_SPECIFICATION'), (4095, 'SNA'), (4094, 'UNDEFINABLE_DATA')])",19,12,big_endian,False,,Nm,['NEO'],,EPAS_sysStatus,880,tesla_can.dbc
+EPAS_handsOnLevel,1.0,0.0,False,-1.0,4.0,"OrderedDict([(0, '0'), (1, '1'), (2, '2'), (3, '3')])",39,2,big_endian,False,,,['NEO'],,EPAS_sysStatus,880,tesla_can.dbc
+EPAS_internalSAS,0.1,-819.200012,False,,,,37,14,big_endian,False,,deg,['NEO'],,EPAS_sysStatus,880,tesla_can.dbc
+EPAS_eacStatus,1.0,0.0,False,5.0,7.0,"OrderedDict([(2, 'EAC_ACTIVE'), (1, 'EAC_AVAILABLE'), (3, 'EAC_FAULT'), (0, 'EAC_INHIBITED'), (4, 'SNA')])",55,3,big_endian,False,,,['NEO'],,EPAS_sysStatus,880,tesla_can.dbc
+EPAS_sysStatusCounter,1.0,0.0,False,0.0,15.0,,51,4,big_endian,False,,,['NEO'],,EPAS_sysStatus,880,tesla_can.dbc
+EPAS_sysStatusChecksum,1.0,0.0,False,0.0,255.0,,63,8,big_endian,False,,,['NEO'],,EPAS_sysStatus,880,tesla_can.dbc
+StW_Angl,0.5,-2048.0,False,,,"OrderedDict([(16383, 'SNA')])",5,14,big_endian,False,,deg,['NEO'],,STW_ANGL_STAT,3,tesla_can.dbc
+StW_AnglSpd,0.5,-2048.0,False,,,"OrderedDict([(16383, 'SNA')])",21,14,big_endian,False,,/s,['NEO'],,STW_ANGL_STAT,3,tesla_can.dbc
+StW_AnglSens_Id,1.0,0.0,False,3.0,3.0,"OrderedDict([(2, 'MUST'), (0, 'PSBL'), (1, 'SELF')])",35,2,big_endian,False,,,['NEO'],,STW_ANGL_STAT,3,tesla_can.dbc
+StW_AnglSens_Stat,1.0,0.0,False,-1.0,4.0,"OrderedDict([(2, 'ERR'), (3, 'ERR_INI'), (1, 'INI'), (0, 'OK')])",33,2,big_endian,False,,,['NEO'],,STW_ANGL_STAT,3,tesla_can.dbc
+MC_STW_ANGL_STAT,1.0,0.0,False,0.0,15.0,,55,4,big_endian,False,,,['NEO'],,STW_ANGL_STAT,3,tesla_can.dbc
+CRC_STW_ANGL_STAT,1.0,0.0,False,0.0,255.0,,63,8,big_endian,False,,,['NEO'],,STW_ANGL_STAT,3,tesla_can.dbc
+StW_AnglHP,0.1,-819.2,False,-819.2,819.0,"OrderedDict([(16383, 'SNA')])",5,14,big_endian,False,,deg,['NEO'],,STW_ANGLHP_STAT,14,tesla_can.dbc
+StW_AnglHP_Spd,0.5,-4096.0,False,-4096.0,4095.5,"OrderedDict([(16383, 'SNA')])",21,14,big_endian,False,,deg/s,['NEO'],,STW_ANGLHP_STAT,14,tesla_can.dbc
+StW_AnglHP_Sens_Id,1.0,0.0,False,,,"OrderedDict([(3, 'SNA'), (2, 'KOSTAL'), (1, 'DELPHI'), (0, 'TEST')])",35,2,big_endian,False,,,['NEO'],,STW_ANGLHP_STAT,14,tesla_can.dbc
+StW_AnglHP_Sens_Stat,1.0,0.0,False,,,"OrderedDict([(3, 'SNA'), (2, 'ERR'), (1, 'INI'), (0, 'OK')])",33,2,big_endian,False,,,['NEO'],,STW_ANGLHP_STAT,14,tesla_can.dbc
+MC_STW_ANGLHP_STAT,1.0,0.0,False,0.0,15.0,,55,4,big_endian,False,,,['NEO'],,STW_ANGLHP_STAT,14,tesla_can.dbc
+CRC_STW_ANGLHP_STAT,1.0,0.0,False,,,,63,8,big_endian,False,,,['NEO'],,STW_ANGLHP_STAT,14,tesla_can.dbc
+DI_torqueDriver,0.25,0.0,False,-750.0,750.0,"OrderedDict([(-4096, 'SNA')])",0,13,little_endian,True,,Nm,['NEO'],,DI_torque1,264,tesla_can.dbc
+DI_torque1Counter,1.0,0.0,False,,,,13,3,little_endian,False,,,['NEO'],,DI_torque1,264,tesla_can.dbc
+DI_torqueMotor,0.25,0.0,False,-750.0,750.0,"OrderedDict([(-4096, 'SNA')])",16,13,little_endian,True,,Nm,['NEO'],,DI_torque1,264,tesla_can.dbc
+DI_soptState,1.0,0.0,False,,,"OrderedDict([(7, 'SOPT_TEST_SNA'), (4, 'SOPT_TEST_NOT_RUN'), (3, 'SOPT_TEST_PASSED'), (2, 'SOPT_TEST_FAILED'), (1, 'SOPT_TEST_IN_PROGRESS'), (0, 'SOPT_PRE_TEST')])",29,3,little_endian,False,,,['NEO'],,DI_torque1,264,tesla_can.dbc
+DI_motorRPM,1.0,0.0,False,-17000.0,17000.0,"OrderedDict([(-32768, 'SNA')])",32,16,little_endian,True,,RPM,['NEO'],,DI_torque1,264,tesla_can.dbc
+DI_pedalPos,0.4,0.0,False,0.0,100.0,"OrderedDict([(255, 'SNA')])",48,8,little_endian,False,,%,['NEO'],,DI_torque1,264,tesla_can.dbc
+DI_torque1Checksum,1.0,0.0,False,,,,56,8,little_endian,False,,,['NEO'],,DI_torque1,264,tesla_can.dbc
+DI_torqueEstimate,0.5,0.0,False,-750.0,750.0,"OrderedDict([(-2048, 'SNA')])",0,12,little_endian,True,,Nm,['NEO'],,DI_torque2,280,tesla_can.dbc
+DI_gear,1.0,0.0,False,,,"OrderedDict([(7, 'DI_GEAR_SNA'), (4, 'DI_GEAR_D'), (3, 'DI_GEAR_N'), (2, 'DI_GEAR_R'), (1, 'DI_GEAR_P'), (0, 'DI_GEAR_INVALID')])",12,3,little_endian,False,,,['NEO'],,DI_torque2,280,tesla_can.dbc
+DI_brakePedal,1.0,0.0,False,,,"OrderedDict([(1, 'Applied'), (0, 'Not_applied')])",15,1,little_endian,False,,,['NEO'],,DI_torque2,280,tesla_can.dbc
+DI_vehicleSpeed,0.05,-25.0,False,-25.0,179.75,"OrderedDict([(4095, 'SNA')])",16,12,little_endian,False,,MPH,['NEO'],,DI_torque2,280,tesla_can.dbc
+DI_gearRequest,1.0,0.0,False,,,"OrderedDict([(7, 'DI_GEAR_SNA'), (4, 'DI_GEAR_D'), (3, 'DI_GEAR_N'), (2, 'DI_GEAR_R'), (1, 'DI_GEAR_P'), (0, 'DI_GEAR_INVALID')])",28,3,little_endian,False,,,['NEO'],,DI_torque2,280,tesla_can.dbc
+DI_torqueInterfaceFailure,1.0,0.0,False,,,"OrderedDict([(1, 'TORQUE_INTERFACE_FAILED'), (0, 'TORQUE_INTERFACE_NORMAL')])",31,1,little_endian,False,,,['NEO'],,DI_torque2,280,tesla_can.dbc
+DI_torque2Counter,1.0,0.0,False,,,,32,4,little_endian,False,,,['NEO'],,DI_torque2,280,tesla_can.dbc
+DI_brakePedalState,1.0,0.0,False,,,"OrderedDict([(3, 'SNA'), (2, 'INVALID'), (1, 'ON'), (0, 'OFF')])",36,2,little_endian,False,,,['NEO'],,DI_torque2,280,tesla_can.dbc
+DI_epbParkRequest,1.0,0.0,False,,,"OrderedDict([(1, 'Park_requested'), (0, 'No_request')])",38,1,little_endian,False,,,['NEO'],,DI_torque2,280,tesla_can.dbc
+DI_epbInterfaceReady,1.0,0.0,False,,,"OrderedDict([(1, 'EPB_INTERFACE_READY'), (0, 'EPB_INTERFACE_NOT_READY')])",39,1,little_endian,False,,,['NEO'],,DI_torque2,280,tesla_can.dbc
+DI_torque2Checksum,1.0,0.0,False,,,,40,8,little_endian,False,,,['NEO'],,DI_torque2,280,tesla_can.dbc
+ESP_espLampFlash,1.0,0.0,False,-1.0,2.0,"OrderedDict([(1, 'FLASH'), (0, 'OFF')])",7,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_espFaultLamp,1.0,0.0,False,-1.0,2.0,"OrderedDict([(0, 'OFF'), (1, 'ON')])",6,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_tcLampFlash,1.0,0.0,False,-1.0,2.0,"OrderedDict([(1, 'FLASH'), (0, 'OFF')])",5,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_brakeDiscWipingActive,1.0,0.0,False,-1.0,2.0,"OrderedDict([(1, 'ACTIVE'), (0, 'INACTIVE')])",4,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_brakeLamp,1.0,0.0,False,-1.0,2.0,"OrderedDict([(0, 'OFF'), (1, 'ON')])",3,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_absBrakeEvent,1.0,0.0,False,-1.0,2.0,"OrderedDict([(1, 'ACTIVE'), (0, 'NOT_ACTIVE')])",2,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_hillStartAssistActive,1.0,0.0,False,-1.0,4.0,"OrderedDict([(1, 'ACTIVE'), (0, 'INACTIVE'), (2, 'NOT_AVAILABLE'), (3, 'SNA')])",1,2,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_tcOffLamp,1.0,0.0,False,0.0,1.0,,15,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_stabilityControlSts,1.0,0.0,False,6.0,7.0,"OrderedDict([(2, 'ENGAGED'), (3, 'FAULTED'), (5, 'INIT'), (4, 'NOT_CONFIGURED'), (0, 'OFF'), (1, 'ON')])",14,3,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_135hCounter,1.0,0.0,False,0.0,15.0,,11,4,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_135hChecksum,1.0,0.0,False,0.0,255.0,,23,8,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_espOffLamp,1.0,0.0,False,-1.0,2.0,"OrderedDict([(0, 'OFF'), (1, 'ON')])",31,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_hydraulicBoostEnabled,1.0,0.0,False,0.0,1.0,,30,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_messageDynoModeActive,1.0,0.0,False,0.0,1.0,,29,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_tcDisabledByFault,1.0,0.0,False,0.0,1.0,,28,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_absFaultLamp,1.0,0.0,False,-1.0,2.0,"OrderedDict([(0, 'OFF'), (1, 'ON')])",27,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_messageEBDFailure,1.0,0.0,False,0.0,1.0,,26,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_messagePumpFailure,1.0,0.0,False,0.0,1.0,,25,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_messagePumpService,1.0,0.0,False,0.0,1.0,,24,1,big_endian,False,,,['NEO'],,ESP_135h,309,tesla_can.dbc
+ESP_wheelPulseCountFrL,1.0,0.0,False,0.0,254.0,,7,8,big_endian,False,,,"['NEO', 'EPAS']",,ESP_B,341,tesla_can.dbc
+ESP_wheelPulseCountFrR,1.0,0.0,False,0.0,254.0,,15,8,big_endian,False,,,"['NEO', 'EPAS']",,ESP_B,341,tesla_can.dbc
+ESP_wheelPulseCountReL,1.0,0.0,False,0.0,254.0,,23,8,big_endian,False,,,"['NEO', 'EPAS']",,ESP_B,341,tesla_can.dbc
+ESP_wheelPulseCountReR,1.0,0.0,False,0.0,254.0,,31,8,big_endian,False,,,"['NEO', 'EPAS']",,ESP_B,341,tesla_can.dbc
+ESP_BChecksum,1.0,0.0,False,0.0,255.0,,39,8,big_endian,False,,,"['NEO', 'EPAS']",,ESP_B,341,tesla_can.dbc
+ESP_vehicleSpeed,0.00999999978,0.0,False,,,,47,16,big_endian,False,,kph,"['NEO', 'EPAS']",,ESP_B,341,tesla_can.dbc
+ESP_BCounter,1.0,0.0,False,1.0,15.0,,62,4,big_endian,False,,,"['NEO', 'EPAS']",,ESP_B,341,tesla_can.dbc
+ESP_vehicleSpeedQF,1.0,0.0,False,1.0,2.0,,57,2,big_endian,False,,,"['NEO', 'EPAS']",,ESP_B,341,tesla_can.dbc
+SDM_bcklDrivStatus,1.0,0.0,False,0.0,3.0,,5,2,big_endian,False,,,['NEO'],,SDM1,513,tesla_can.dbc
+SDM_bcklPassStatus,1.0,0.0,False,0.0,3.0,,3,2,big_endian,False,,,['NEO'],,SDM1,513,tesla_can.dbc
+EPB_epasEACAllow,1.0,0.0,False,4.0,7.0,,2,3,big_endian,False,,,"['NEO', 'EPAS']",,EPB_epasControl,532,tesla_can.dbc
+EPB_epasControlCounter,1.0,0.0,False,0.0,15.0,,11,4,big_endian,False,,,"['NEO', 'EPAS']",,EPB_epasControl,532,tesla_can.dbc
+EPB_epasControlChecksum,1.0,0.0,False,0.0,255.0,,23,8,big_endian,False,,,"['NEO', 'EPAS']",,EPB_epasControl,532,tesla_can.dbc
+YEAR,1.0,2000.0,False,2000.0,2127.0,"OrderedDict([(126, 'Init'), (127, 'SNA')])",0,7,little_endian,False,,Year,['NEO'],,GTW_carState,792,tesla_can.dbc
+CERRD,1.0,0.0,False,0.0,1.0,"OrderedDict([(1, 'CAN error detect'), (0, 'no Can error detected')])",7,1,little_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+MONTH,1.0,0.0,False,1.0,12.0,"OrderedDict([(1, 'Init'), (15, 'SNA')])",8,4,little_endian,False,,Month,['NEO'],,GTW_carState,792,tesla_can.dbc
+DOOR_STATE_FL,1.0,0.0,False,0.0,3.0,"OrderedDict([(2, 'Init'), (3, 'SNA'), (0, 'closed'), (1, 'open')])",12,2,little_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+DOOR_STATE_FR,1.0,0.0,False,0.0,3.0,"OrderedDict([(2, 'Init'), (3, 'SNA'), (0, 'closed'), (1, 'open')])",14,2,little_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+SECOND,1.0,0.0,False,0.0,59.0,"OrderedDict([(62, 'Init'), (63, 'SNA')])",16,6,little_endian,False,,s,['NEO'],,GTW_carState,792,tesla_can.dbc
+DOOR_STATE_RL,1.0,0.0,False,0.0,3.0,"OrderedDict([(2, 'Init'), (3, 'SNA'), (0, 'closed'), (1, 'open')])",22,2,little_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+Hour,1.0,0.0,False,0.0,23.0,"OrderedDict([(30, 'Init'), (31, 'SNA')])",24,5,little_endian,False,,h,['NEO'],,GTW_carState,792,tesla_can.dbc
+DOOR_STATE_RR,1.0,0.0,False,0.0,3.0,"OrderedDict([(2, 'Init'), (3, 'SNA'), (0, 'closed'), (1, 'open')])",29,2,little_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+DAY,1.0,0.0,False,0.0,31.0,"OrderedDict([(1, 'Init'), (0, 'SNA')])",32,5,little_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+MINUTE,1.0,0.0,False,0.0,59.0,"OrderedDict([(62, 'Init'), (63, 'SNA')])",40,6,little_endian,False,,min,['NEO'],,GTW_carState,792,tesla_can.dbc
+BOOT_STATE,1.0,0.0,False,0.0,3.0,"OrderedDict([(2, 'Init'), (3, 'SNA'), (0, 'closed'), (1, 'open')])",46,2,little_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+GTW_updateInProgress,1.0,0.0,False,0.0,3.0,"OrderedDict([(1, 'IN_PROGRESS'), (2, 'IN_PROGRESS_NOT_USED'), (3, 'IN_PROGRESS_SNA'), (0, 'NOT_IN_PROGRESS')])",48,2,little_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+BC_headLightLStatus,1.0,0.0,False,0.0,3.0,,55,2,big_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+DOOR_STATE_FrontTrunk,1.0,0.0,False,0.0,3.0,"OrderedDict([(2, 'Init'), (3, 'SNA'), (0, 'closed'), (1, 'open')])",50,2,little_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+MCU_transportModeOn,1.0,0.0,False,0.0,1.0,"OrderedDict([(0, 'NORMAL_MODE')])",53,1,big_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+MCU_factoryMode,1.0,0.0,False,0.0,1.0,"OrderedDict([(1, 'FACTORY_MODE'), (0, 'NORMAL_MODE')])",52,1,little_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+BC_indicatorRStatus,1.0,0.0,False,0.0,3.0,,61,2,big_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+BC_indicatorLStatus,1.0,0.0,False,0.0,3.0,,59,2,big_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+BC_headLightRStatus,1.0,0.0,False,0.0,3.0,,57,2,big_endian,False,,,['NEO'],,GTW_carState,792,tesla_can.dbc
+DI_systemState,1.0,0.0,False,,,"OrderedDict([(3, 'ABORT'), (4, 'ENABLE'), (2, 'FAULT'), (1, 'STANDBY'), (0, 'UNAVAILABLE')])",0,3,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+DI_vehicleHoldState,1.0,0.0,False,,,"OrderedDict([(2, 'BLEND_IN'), (4, 'BLEND_OUT'), (6, 'FAULT'), (7, 'INIT'), (5, 'PARK'), (1, 'STANDBY'), (3, 'STANDSTILL'), (0, 'UNAVAILABLE')])",3,3,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+DI_proximity,1.0,0.0,False,,,,6,1,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+DI_driveReady,1.0,0.0,False,,,,7,1,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+DI_regenLight,1.0,0.0,False,,,,8,1,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+DI_state,1.0,0.0,False,,,"OrderedDict([(3, 'ABORT'), (4, 'ENABLE'), (2, 'FAULT'), (1, 'STANDBY'), (0, 'UNAVAILABLE')])",9,3,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+DI_cruiseState,1.0,0.0,False,,,"OrderedDict([(2, 'ENABLED'), (5, 'FAULT'), (0, 'OFF'), (4, 'OVERRIDE'), (7, 'PRE_CANCEL'), (6, 'PRE_FAULT'), (1, 'STANDBY'), (3, 'STANDSTILL')])",12,4,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+DI_analogSpeed,0.1,0.0,False,0.0,150.0,"OrderedDict([(4095, 'SNA')])",16,12,little_endian,False,,speed,['NEO'],,DI_state,872,tesla_can.dbc
+DI_immobilizerState,1.0,0.0,False,,,"OrderedDict([(2, 'AUTHENTICATING'), (3, 'DISARMED'), (6, 'FAULT'), (4, 'IDLE'), (0, 'INIT_SNA'), (1, 'REQUEST'), (5, 'RESET')])",28,3,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+DI_speedUnits,1.0,0.0,False,0.0,1.0,"OrderedDict([(1, 'KPH'), (0, 'MPH')])",31,1,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+DI_cruiseSet,0.5,0.0,False,0.0,255.5,,32,9,little_endian,False,,speed,['NEO'],,DI_state,872,tesla_can.dbc
+DI_aebState,1.0,0.0,False,,,"OrderedDict([(2, 'ENABLED'), (4, 'FAULT'), (7, 'SNA'), (1, 'STANDBY'), (3, 'STANDSTILL'), (0, 'UNAVAILABLE')])",41,3,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+DI_stateCounter,1.0,0.0,False,,,,44,4,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+DI_digitalSpeed,1.0,0.0,False,0.0,250.0,"OrderedDict([(255, 'SNA')])",48,8,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+DI_stateChecksum,1.0,0.0,False,,,,56,8,little_endian,False,,,['NEO'],,DI_state,872,tesla_can.dbc
+StW_Sw_Stat3,1.0,0.0,False,,,"OrderedDict([(7, 'SNA'), (6, 'NDEF6'), (5, 'NDEF5'), (4, 'NDEF4'), (3, 'PLUS_MINUS'), (2, 'MINUS'), (1, 'PLUS'), (0, 'NPSD')])",0,3,little_endian,False,,,['NEO'],,SBW_RQ_SCCM,109,tesla_can.dbc
+MsgTxmtId,1.0,0.0,False,,,"OrderedDict([(3, 'NDEF3'), (2, 'NDEF2'), (1, 'SCCM'), (0, 'EWM')])",6,2,little_endian,False,,,['NEO'],,SBW_RQ_SCCM,109,tesla_can.dbc
+TSL_RND_Posn_StW,1.0,0.0,False,,,"OrderedDict([(15, 'SNA'), (8, 'D'), (6, 'INI'), (4, 'N_DOWN'), (2, 'N_UP'), (1, 'R'), (0, 'IDLE')])",8,4,little_endian,False,,,['NEO'],,SBW_RQ_SCCM,109,tesla_can.dbc
+TSL_P_Psd_StW,1.0,0.0,False,,,"OrderedDict([(3, 'SNA'), (2, 'INI'), (1, 'PSD'), (0, 'IDLE')])",12,2,little_endian,False,,,['NEO'],,SBW_RQ_SCCM,109,tesla_can.dbc
+MC_SBW_RQ_SCCM,1.0,0.0,False,0.0,15.0,,20,4,little_endian,False,,,['NEO'],,SBW_RQ_SCCM,109,tesla_can.dbc
+CRC_SBW_RQ_SCCM,1.0,0.0,False,,,,24,8,little_endian,False,,,['NEO'],,SBW_RQ_SCCM,109,tesla_can.dbc
+SpdCtrlLvr_Stat,1.0,0.0,False,,,"OrderedDict([(32, 'DN_1ST'), (16, 'UP_1ST'), (8, 'DN_2ND'), (4, 'UP_2ND'), (2, 'RWD'), (1, 'FWD'), (0, 'IDLE')])",0,6,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+VSL_Enbl_Rq,1.0,0.0,False,,,,6,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+SpdCtrlLvrStat_Inv,1.0,0.0,False,,,,7,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+DTR_Dist_Rq,1.0,0.0,False,0.0,200.0,"OrderedDict([(255, 'SNA'), (200, 'ACC_DIST_7'), (166, 'ACC_DIST_6'), (133, 'ACC_DIST_5'), (100, 'ACC_DIST_4'), (66, 'ACC_DIST_3'), (33, 'ACC_DIST_2'), (0, 'ACC_DIST_1')])",8,8,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+TurnIndLvr_Stat,1.0,0.0,False,,,"OrderedDict([(3, 'SNA'), (2, 'RIGHT'), (1, 'LEFT'), (0, 'IDLE')])",16,2,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+HiBmLvr_Stat,1.0,0.0,False,,,"OrderedDict([(3, 'SNA'), (2, 'HIBM_FLSH_ON_PSD'), (1, 'HIBM_ON_PSD'), (0, 'IDLE')])",18,2,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+WprWashSw_Psd,1.0,0.0,False,,,"OrderedDict([(3, 'SNA'), (2, 'WASH'), (1, 'TIPWIPE'), (0, 'NPSD')])",20,2,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+WprWash_R_Sw_Posn_V2,1.0,0.0,False,,,"OrderedDict([(3, 'SNA'), (2, 'WASH'), (1, 'INTERVAL'), (0, 'OFF')])",22,2,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Lvr_Stat,1.0,0.0,False,,,"OrderedDict([(4, 'STW_BACK'), (3, 'STW_FWD'), (2, 'STW_DOWN'), (1, 'STW_UP'), (0, 'NPSD')])",24,3,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Cond_Flt,1.0,0.0,False,,,,27,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Cond_Psd,1.0,0.0,False,,,"OrderedDict([(3, 'SNA'), (2, 'DOWN'), (1, 'UP'), (0, 'NPSD')])",28,2,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+HrnSw_Psd,1.0,0.0,False,,,"OrderedDict([(3, 'SNA'), (2, 'NDEF2'), (1, 'PSD'), (0, 'NPSD')])",30,2,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw00_Psd,1.0,0.0,False,,,"OrderedDict([(1, 'PRESSED'), (0, 'NOT_PRESSED_SNA')])",32,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw01_Psd,1.0,0.0,False,,,"OrderedDict([(1, 'PRESSED'), (0, 'NOT_PRESSED_SNA')])",33,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw02_Psd,1.0,0.0,False,,,,34,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw03_Psd,1.0,0.0,False,,,"OrderedDict([(1, 'PRESSED'), (0, 'NOT_PRESSED_SNA')])",35,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw04_Psd,1.0,0.0,False,,,"OrderedDict([(1, 'PRESSED'), (0, 'NOT_PRESSED_SNA')])",36,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw05_Psd,1.0,0.0,False,,,,37,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw06_Psd,1.0,0.0,False,,,,38,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw07_Psd,1.0,0.0,False,,,,39,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw08_Psd,1.0,0.0,False,,,,40,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw09_Psd,1.0,0.0,False,,,,41,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw10_Psd,1.0,0.0,False,,,,42,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw11_Psd,1.0,0.0,False,,,,43,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw12_Psd,1.0,0.0,False,,,,44,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw13_Psd,1.0,0.0,False,,,,45,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw14_Psd,1.0,0.0,False,,,,46,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+StW_Sw15_Psd,1.0,0.0,False,,,,47,1,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+WprSw6Posn,1.0,0.0,False,,,"OrderedDict([(7, 'SNA'), (6, 'STAGE2'), (5, 'STAGE1'), (4, 'INTERVAL4'), (3, 'INTERVAL3'), (2, 'INTERVAL2'), (1, 'INTERVAL1'), (0, 'OFF')])",48,3,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+MC_STW_ACTN_RQ,1.0,0.0,False,0.0,15.0,,52,4,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+CRC_STW_ACTN_RQ,1.0,0.0,False,,,,56,8,little_endian,False,,,['NEO'],,STW_ACTN_RQ,69,tesla_can.dbc
+DrRLtch_RR_Stat,1.0,0.0,False,-1.0,4.0,"OrderedDict([(1, 'CLS'), (0, 'NDEF0'), (2, 'OPN'), (3, 'SNA')])",7,2,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+DrRLtch_RL_Stat,1.0,0.0,False,-1.0,4.0,"OrderedDict([(1, 'CLS'), (0, 'NDEF0'), (2, 'OPN'), (3, 'SNA')])",5,2,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+DrRLtch_FR_Stat,1.0,0.0,False,-1.0,4.0,"OrderedDict([(1, 'CLS'), (0, 'NDEF0'), (2, 'OPN'), (3, 'SNA')])",3,2,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+DrRLtch_FL_Stat,1.0,0.0,False,-1.0,4.0,"OrderedDict([(1, 'CLS'), (0, 'NDEF0'), (2, 'OPN'), (3, 'SNA')])",1,2,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+VTA_Alm_Actv,1.0,0.0,False,0.0,1.0,,13,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+EngHd_Stat,1.0,0.0,False,-1.0,4.0,"OrderedDict([(1, 'CLS'), (0, 'NDEF0'), (2, 'OPN'), (3, 'SNA')])",11,2,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+DL_RLtch_Stat,1.0,0.0,False,-1.0,4.0,"OrderedDict([(1, 'CLS'), (0, 'NDEF0'), (2, 'OPN'), (3, 'SNA')])",9,2,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+ADL_LoBm_On_Rq,1.0,0.0,False,0.0,1.0,,23,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+LgtSens_Night,1.0,0.0,False,-1.0,2.0,"OrderedDict([(0, 'DAY'), (1, 'NIGHT')])",22,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+LgtSens_Flt,1.0,0.0,False,0.0,1.0,,21,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+LgtSens_Tunnel,1.0,0.0,False,0.0,1.0,,20,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+LgtSens_SNA,1.0,0.0,False,0.0,1.0,,19,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+LgtSens_Twlgt,1.0,0.0,False,0.0,7.0,,18,3,big_endian,False,,Steps,['NEO'],,BODY_R1,643,tesla_can.dbc
+WprOutsdPkPosn,1.0,0.0,False,0.0,1.0,,29,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+MPkBrk_Stat,1.0,0.0,False,-1.0,2.0,"OrderedDict([(1, 'ENGG'), (0, 'RELS')])",28,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+Term54_Actv,1.0,0.0,False,0.0,1.0,,27,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+Hrn_On,1.0,0.0,False,0.0,1.0,,26,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+Trlr_Stat,1.0,0.0,False,-1.0,4.0,"OrderedDict([(2, 'NDEF2'), (0, 'NONE'), (1, 'OK'), (3, 'SNA')])",25,2,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+RevGr_Engg,1.0,0.0,False,-1.0,4.0,"OrderedDict([(0, 'DISENGG'), (1, 'ENGG'), (2, 'NDEF2'), (3, 'SNA')])",39,2,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+LoBm_P_Rt_Flt,1.0,0.0,False,0.0,1.0,,37,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+LoBm_D_Lt_Flt,1.0,0.0,False,0.0,1.0,,36,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+IrLmp_P_Rt_Flt,1.0,0.0,False,0.0,1.0,,35,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+IrLmp_D_Lt_Flt,1.0,0.0,False,0.0,1.0,,34,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+HiBm_On,1.0,0.0,False,0.0,1.0,,33,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+LoBm_On_Rq,1.0,0.0,False,0.0,1.0,,32,1,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+AirTemp_Insd,0.25,0.0,False,0.0,63.5,"OrderedDict([(255, 'SNA')])",47,8,big_endian,False,,C,['NEO'],,BODY_R1,643,tesla_can.dbc
+StW_Cond_Stat,1.0,0.0,False,-1.0,4.0,"OrderedDict([(3, 'BLINK'), (1, 'NDEF1'), (0, 'OFF'), (2, 'ON')])",55,2,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+Bckl_Sw_RM_Stat_SAM_R,1.0,0.0,False,-1.0,4.0,"OrderedDict([(2, 'FLT'), (1, 'NOT'), (0, 'OK'), (3, 'SNA')])",53,2,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+Bckl_Sw_RR_Stat_SAM_R,1.0,0.0,False,-1.0,4.0,"OrderedDict([(2, 'FLT'), (1, 'NOT'), (0, 'OK'), (3, 'SNA')])",51,2,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+Bckl_Sw_RL_Stat_SAM_R,1.0,0.0,False,-1.0,4.0,"OrderedDict([(2, 'FLT'), (1, 'NOT'), (0, 'OK'), (3, 'SNA')])",49,2,big_endian,False,,,['NEO'],,BODY_R1,643,tesla_can.dbc
+AirTemp_Outsd,0.5,-40.0,False,-40.0,86.5,"OrderedDict([(254, 'INIT'), (255, 'SNA')])",63,8,big_endian,False,,C,['NEO'],,BODY_R1,643,tesla_can.dbc
+UI_gpsHDOP,0.1,0.0,False,0.0,25.5,,0,8,little_endian,False,,1,['DAS'],,UI_gpsVehicleSpeed,760,tesla_can.dbc
+UI_gpsVehicleHeading,0.0078125,0.0,False,0.0,511.9921875,,8,16,little_endian,False,,deg,['DAS'],,UI_gpsVehicleSpeed,760,tesla_can.dbc
+UI_gpsVehicleSpeed,0.00390625,0.0,False,0.0,250.996,,24,16,little_endian,False,,km/hr,[],,UI_gpsVehicleSpeed,760,tesla_can.dbc
+UI_userSpeedOffset,1.0,-30.0,False,-30.0,33.0,,40,6,little_endian,False,,kph/mph,['DAS'],,UI_gpsVehicleSpeed,760,tesla_can.dbc
+UI_mapSpeedLimitUnits,1.0,0.0,False,0.0,1.0,"OrderedDict([(1, 'KPH'), (0, 'MPH')])",46,1,little_endian,False,,,['DAS'],,UI_gpsVehicleSpeed,760,tesla_can.dbc
+UI_userSpeedOffsetUnits,1.0,0.0,False,0.0,1.0,"OrderedDict([(1, 'KPH'), (0, 'MPH')])",47,1,little_endian,False,,,['DAS'],,UI_gpsVehicleSpeed,760,tesla_can.dbc
+UI_mppSpeedLimit,5.0,0.0,False,0.0,155.0,,48,5,little_endian,False,,kph/mph,['DAS'],,UI_gpsVehicleSpeed,760,tesla_can.dbc
+UI_gpsNmeaMIA,1.0,0.0,False,,,,53,1,little_endian,False,,,['DAS'],,UI_gpsVehicleSpeed,760,tesla_can.dbc
+MCU_dasDebugEnable,1.0,0.0,False,,,,0,1,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_parkBrakeRequest,1.0,0.0,False,,,,1,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_trailerModeCH,1.0,0.0,False,,,,3,1,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_fcwSensitivity,1.0,0.0,False,,,,4,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_fcwEnable,1.0,0.0,False,,,,6,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_latControlEnable,1.0,0.0,False,,,,8,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_accOvertakeEnable,1.0,0.0,False,,,,10,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_ldwEnable,1.0,0.0,False,,,,12,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_aebEnable,1.0,0.0,False,,,,14,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_bsdEnable,1.0,0.0,False,,,,16,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_ahlbEnable,1.0,0.0,False,,,,18,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_parkSetting,1.0,0.0,False,,,,20,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_pedalSafetyEnable,1.0,0.0,False,,,,22,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_frontDefrostReq_das,1.0,0.0,False,,,,24,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_autoParkRequest,1.0,0.0,False,,,,26,4,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_redLightStopSignEnable,1.0,0.0,False,,,,30,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_enableCreepTorqueCH,1.0,0.0,False,,,,32,1,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_narrowGarages,1.0,0.0,False,,,,33,1,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_rebootAutopilot,1.0,0.0,False,,,,34,1,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_enableAutowipers,1.0,0.0,False,,,,35,1,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_overPaintedUSS,1.0,0.0,False,,,,38,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_selfParkTune,1.0,0.0,False,0.0,15.0,,40,4,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_towModeEnable,1.0,0.0,False,,,,44,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_zeroSpeedConfirmed,1.0,0.0,False,,,,46,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_aesEnable,1.0,0.0,False,,,,48,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_autoLaneChangeEnable,1.0,0.0,False,,,,50,2,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_chassisControlCounter,1.0,0.0,False,,,,52,4,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_chassisControlChecksum,1.0,0.0,False,,,,56,8,little_endian,False,,,['NEO'],,MCU_chassisControl,536,tesla_can.dbc
+MCU_clusterReadyForPowerOff,1.0,0.0,False,0.0,1.0,,5,1,little_endian,False,,,['NEO'],,MCU_clusterBacklightRequest,904,tesla_can.dbc
+MCU_clusterReadyForDrive,1.0,0.0,False,-1.0,2.0,"OrderedDict([(0, 'NO_SNA'), (1, 'YES')])",6,1,little_endian,False,,,['NEO'],,MCU_clusterBacklightRequest,904,tesla_can.dbc
+MCU_clusterBacklightOn,1.0,0.0,False,0.0,1.0,,7,1,little_endian,False,,,['NEO'],,MCU_clusterBacklightRequest,904,tesla_can.dbc
+MCU_clusterBrightnessLevel,0.5,0.0,False,0.0,127.5,,8,8,little_endian,False,,%,['NEO'],,MCU_clusterBacklightRequest,904,tesla_can.dbc
+MCU_latitude,1e-06,0.0,False,,,,0,28,little_endian,True,,deg,['NEO'],,MCU_locationStatus,984,tesla_can.dbc
+MCU_longitude,1e-06,0.0,False,,,,28,29,little_endian,True,,deg,['NEO'],,MCU_locationStatus,984,tesla_can.dbc
+MCU_gpsAccuracy,0.2,0.0,False,,,,57,7,little_endian,False,,m,['NEO'],,MCU_locationStatus,984,tesla_can.dbc
+MCU_elevation,0.1,0.0,False,,,,0,32,little_endian,True,,m,['GTW'],,MCU_locationStatus2,104,tesla_can.dbc
+MCU_navigonExpectedSpeed,1.0,0.0,False,0.0,126.0,,32,7,little_endian,False,,mph,['GTW'],,MCU_locationStatus2,104,tesla_can.dbc
+GTW_driveGoingDown,1.0,0.0,False,0,1,,7,1,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_accGoingDown,1.0,0.0,False,0,1,,6,1,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_driverIsLeaving,1.0,0.0,False,0,1,,5,1,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_icPowerOff,1.0,0.0,False,0,1,,4,1,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_notEnough12VForDrive,1.0,0.0,False,0,1,,3,1,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_driverPresent,1.0,0.0,False,0,1,,2,1,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_brakePressed,1.0,0.0,False,0,1,,1,1,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_driveRailReq,1.0,0.0,False,0,1,,0,1,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_hvacGoingDown,1.0,0.0,False,0,1,,11,1,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_preconditionRequest,1.0,0.0,False,0,1,,10,1,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_hvacRailReq,1.0,0.0,False,0,1,,9,1,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_accRailReq,1.0,0.0,False,0,1,,8,1,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_statusCounter,1.0,0.0,False,0,15,,51,4,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_statusChecksum,1.0,0.0,False,0,255,,63,8,big_endian,False,,,['NEO'],,GTW_status,840,tesla_can.dbc
+GTW_dasHw,1.0,0.0,False,,,,7,2,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_unknown1,1.0,0.0,False,,,,5,1,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_fourWheelDrive,1.0,0.0,False,,,,4,2,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_performanceConfig,1.0,0.0,False,,,,2,3,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_unknown2,1.0,0.0,False,,,,15,1,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_airSuspensionInstalled,1.0,0.0,False,,,,14,3,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_forwardRadarHw,1.0,0.0,False,,,,11,2,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_parkAssistInstalled,1.0,0.0,False,,,,9,2,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_country,1.0,0.0,False,,,,23,16,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_radarPosition,1.0,0.0,False,,,,39,4,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_bodyControlsType,1.0,0.0,False,,,,35,1,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_rhd,1.0,0.0,False,,,,34,1,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_parkSensorGeometryType,1.0,0.0,False,,,,33,2,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_chassisType,1.0,0.0,False,0.0,2.0,,47,2,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_epasType,1.0,0.0,False,,,,45,2,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_frontCornerRadarHw,1.0,0.0,False,,,,43,2,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_rearCornerRadarHw,1.0,0.0,False,,,,41,2,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_rearSeatControllerMask,1.0,0.0,False,0.0,7.0,,55,3,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_wheelType,1.0,0.0,False,,,,52,5,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_unknown3,1.0,0.0,False,,,,63,2,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_autopilot,1.0,0.0,False,,,,61,2,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_brakeHwType,1.0,0.0,False,0.0,2.0,,59,2,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_foldingMirrorsInstalled,1.0,0.0,False,,,,57,1,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+GTW_euVehicle,1.0,0.0,False,,,,56,1,big_endian,False,,,['NEO'],,GTW_carConfig,920,tesla_can.dbc
+UI_autopilotControlIndex,1.0,0.0,False,0.0,7.0,,0,3,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_hovEnabled,1.0,0.0,False,,,,3,1,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_camBlockLaneCheckDisable,1.0,0.0,False,,,,3,1,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_donDisableAutoWiperDuration,1.0,0.0,False,,,,4,3,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_camBlockLaneCheckThreshold,0.01587,0.0,False,0.0,1.0,,4,6,little_endian,False,,%,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_donDisableOnAutoWiperSpeed,1.0,0.0,False,,,,7,4,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_camBlockBlurDisable,1.0,0.0,False,,,,10,1,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_blindspotMinSpeed,1.0,0.0,False,,,,11,4,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_camBlockBlurThreshold,0.01587,0.0,False,0.0,1.0,,11,6,little_endian,False,,%,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_blindspotDistance,1.0,0.0,False,,,,15,3,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_blindspotTTC,1.0,0.0,False,,,,18,3,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_donStopEndOfRampBuffer,1.0,0.0,False,,,,21,3,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_donDisableCutin,1.0,0.0,False,,,,24,1,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_donMinGoreWidthForAbortMap,1.0,0.0,False,,,,25,4,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_donAlcProgGoreAbortThres,1.0,0.0,False,,,,29,4,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_donMinGoreWidthForAbortNotMap,1.0,0.0,False,,,,33,4,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_alcDisableUltrasonicCheck,1.0,0.0,False,,,,37,1,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_alcUltrasonicDistance,1.0,0.0,False,,,,38,4,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_alcUltrasonicWaitTime,1.0,0.0,False,,,,42,3,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_alcEgoLeadingReactionAccel,1.0,0.0,False,,,,48,2,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_alcMergIntervalRearDHyst,1.0,0.0,False,,,,50,2,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_alcMergingIntervalHeadwayHyst,1.0,0.0,False,,,,52,2,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_alcAssertivenessRate,1.0,0.0,False,,,,54,2,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_alcViewRangeSensitivity,1.0,0.0,False,,,,56,2,little_endian,False,,,"['APP', 'APS']",,UI_autopilotControl,1006,tesla_can.dbc
+UI_csaOfframpCurvC2,1e-06,0.0,False,-0.032768,0.032767,,0,16,little_endian,True,,1/m,['DAS'],,UI_csaOfframpCurvature,728,tesla_can.dbc
+UI_csaOfframpCurvC3,4e-09,0.0,False,-0.000131072,0.000131068,,16,16,little_endian,True,,1/m2,['DAS'],,UI_csaOfframpCurvature,728,tesla_can.dbc
+UI_csaOfframpCurvRange,2.0,0.0,False,0.0,510.0,,32,8,little_endian,False,,m,['DAS'],,UI_csaOfframpCurvature,728,tesla_can.dbc
+UI_csaOfframpCurvCounter,1.0,0.0,False,0.0,255.0,,40,8,little_endian,False,,,[],,UI_csaOfframpCurvature,728,tesla_can.dbc
+UI_csaOfframpCurvUsingTspline,1.0,0.0,False,0.0,1.0,,48,1,little_endian,False,,,['DAS'],,UI_csaOfframpCurvature,728,tesla_can.dbc
+UI_csaOfframpCurvReserved,1.0,0.0,False,,,,49,7,little_endian,False,,,[],,UI_csaOfframpCurvature,728,tesla_can.dbc
+UI_csaOfframpCurvChecksum,1.0,0.0,False,,,,56,8,little_endian,False,,,[],,UI_csaOfframpCurvature,728,tesla_can.dbc
+UI_csaRoadCurvC2,1e-06,0.0,False,-0.032768,0.032767,,0,16,little_endian,True,,1/m,['DAS'],,UI_csaRoadCurvature,744,tesla_can.dbc
+UI_csaRoadCurvC3,4e-09,0.0,False,-0.000131072,0.000131068,,16,16,little_endian,True,,1/m2,['DAS'],,UI_csaRoadCurvature,744,tesla_can.dbc
+UI_csaRoadCurvRange,2.0,0.0,False,0.0,510.0,,32,8,little_endian,False,,m,['DAS'],,UI_csaRoadCurvature,744,tesla_can.dbc
+UI_csaRoadCurvCounter,1.0,0.0,False,0.0,255.0,,40,8,little_endian,False,,,[],,UI_csaRoadCurvature,744,tesla_can.dbc
+UI_csaRoadCurvUsingTspline,1.0,0.0,False,0.0,1.0,,48,1,little_endian,False,,,['DAS'],,UI_csaRoadCurvature,744,tesla_can.dbc
+UI_csaRoadCurvReserved,1.0,0.0,False,,,,49,7,little_endian,False,,,[],,UI_csaRoadCurvature,744,tesla_can.dbc
+UI_csaRoadCurvChecksum,1.0,0.0,False,,,,56,8,little_endian,False,,,[],,UI_csaRoadCurvature,744,tesla_can.dbc
+UI_anonDebugParam1,1.0,0.0,False,0.0,100.0,,0,7,little_endian,False,,,['DAS'],,UI_driverAssistAnonDebugParams,1080,tesla_can.dbc
+UI_anonDebugFlag1,1.0,0.0,False,,,,7,1,little_endian,False,,,['DAS'],,UI_driverAssistAnonDebugParams,1080,tesla_can.dbc
+UI_anonDebugParam2,1.0,0.0,False,0.0,100.0,,8,7,little_endian,False,,,['DAS'],,UI_driverAssistAnonDebugParams,1080,tesla_can.dbc
+UI_anonDebugFlag2,1.0,0.0,False,,,,15,1,little_endian,False,,,['DAS'],,UI_driverAssistAnonDebugParams,1080,tesla_can.dbc
+UI_anonDebugParam3,1.0,0.0,False,0.0,100.0,,16,7,little_endian,False,,,['DAS'],,UI_driverAssistAnonDebugParams,1080,tesla_can.dbc
+UI_anonDebugFlag3,1.0,0.0,False,,,,23,1,little_endian,False,,,['DAS'],,UI_driverAssistAnonDebugParams,1080,tesla_can.dbc
+UI_anonDebugParam4,1.0,0.0,False,0.0,100.0,,24,7,little_endian,False,,,['DAS'],,UI_driverAssistAnonDebugParams,1080,tesla_can.dbc
+UI_anonDebugFlag4,1.0,0.0,False,,,,31,1,little_endian,False,,,['DAS'],,UI_driverAssistAnonDebugParams,1080,tesla_can.dbc
+UI_anonDebugParam5,1.0,0.0,False,0.0,100.0,,32,7,little_endian,False,,,['DAS'],,UI_driverAssistAnonDebugParams,1080,tesla_can.dbc
+UI_anonDebugParam6,1.0,0.0,False,0.0,100.0,,40,7,little_endian,False,,,['DAS'],,UI_driverAssistAnonDebugParams,1080,tesla_can.dbc
+UI_anonDebugParam7,1.0,0.0,False,0.0,100.0,,48,7,little_endian,False,,,['DAS'],,UI_driverAssistAnonDebugParams,1080,tesla_can.dbc
+UI_visionSpeedSlider,1.0,0.0,False,0.0,100.0,,56,7,little_endian,False,,,['DAS'],,UI_driverAssistAnonDebugParams,1080,tesla_can.dbc
+UI_autopilotControlRequest,1.0,0.0,False,1.0,0.0,,0,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_ulcStalkConfirm,1.0,0.0,False,1.0,0.0,,1,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_summonHeartbeat,1.0,0.0,False,,,,2,2,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_curvSpeedAdaptDisable,1.0,0.0,False,,,,4,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_dasDeveloper,1.0,0.0,False,,,,5,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_enableVinAssociation,1.0,0.0,False,,,,6,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_lssLkaEnabled,1.0,0.0,False,,,,7,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_lssLdwEnabled,1.0,0.0,False,,,,8,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_autoSummonEnable,1.0,0.0,False,0.0,1.0,,10,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_exceptionListEnable,1.0,0.0,False,0.0,1.0,,11,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_roadCheckDisable,1.0,0.0,False,,,,12,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_driveOnMapsEnable,1.0,0.0,False,,,,13,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_handsOnRequirementDisable,1.0,0.0,False,,,,14,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_forksEnable,1.0,0.0,False,,,,15,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_fuseLanesDisable,1.0,0.0,False,,,,16,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_fuseHPPDisable,1.0,0.0,False,,,,17,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_fuseVehiclesDisable,1.0,0.0,False,,,,18,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_enableNextGenACC,1.0,0.0,False,0.0,1.0,,19,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_visionSpeedType,1.0,0.0,False,,,,20,2,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_curvatureDatabaseOnly,1.0,0.0,False,,,,22,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_lssElkEnabled,1.0,0.0,False,,,,23,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_summonExitType,1.0,0.0,False,0.0,3.0,,24,2,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_summonEntryType,1.0,0.0,False,0.0,3.0,,26,2,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_selfParkRequest,1.0,0.0,False,0.0,15.0,,28,4,little_endian,False,,,"['DAS', 'PARK']",,UI_driverAssistControl,1000,tesla_can.dbc
+UI_summonReverseDist,1.0,0.0,False,0.0,63.0,,32,6,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_undertakeAssistEnable,1.0,0.0,False,,,,38,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_adaptiveSetSpeedEnable,1.0,0.0,False,,,,39,1,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_drivingSide,1.0,0.0,False,0.0,3.0,,40,2,little_endian,False,,,['DAS'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_enableClipTelemetry,1.0,0.0,False,,,,42,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_enableTripTelemetry,1.0,0.0,False,,,,43,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_enableRoadSegmentTelemetry,1.0,0.0,False,,,,44,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_followNavRouteEnable,1.0,0.0,False,,,,46,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_ulcSpeedConfig,1.0,0.0,False,0.0,3.0,,48,2,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_ulcBlindSpotConfig,1.0,0.0,False,0.0,3.0,,50,2,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_autopilotAlwaysOn,1.0,0.0,False,0.0,1.0,,52,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_accFromZero,1.0,0.0,False,0.0,1.0,,53,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_alcOffHighwayEnable,1.0,0.0,False,0.0,1.0,,54,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_validationLoop,1.0,0.0,False,0.0,1.0,,55,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_ulcOffHighway,1.0,0.0,False,0.0,1.0,,56,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_enableNavRouteCSA,1.0,0.0,False,0.0,1.0,,57,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_enableCutinExperiments,1.0,0.0,False,0.0,1.0,,58,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_source3D,1.0,0.0,False,0.0,7.0,,60,3,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_enableVisionOnlyStops,1.0,0.0,False,0.0,1.0,,63,1,little_endian,False,,,['APP'],,UI_driverAssistControl,1000,tesla_can.dbc
+UI_mapSpeedLimitDependency,1.0,0.0,False,,,,0,3,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_roadClass,1.0,0.0,False,,,,3,3,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_inSuperchargerGeofence,1.0,0.0,False,,,,6,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_mapSpeedUnits,1.0,0.0,False,,,,7,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_mapSpeedLimit,1.0,0.0,False,,,,8,5,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_mapSpeedLimitType,1.0,0.0,False,,,,13,3,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_countryCode,1.0,0.0,False,,,,16,10,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_streetCount,1.0,0.0,False,,,,26,2,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_gpsRoadMatch,1.0,0.0,False,,,,28,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_navRouteActive,1.0,0.0,False,,,,29,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_parallelAutoparkEnabled,1.0,0.0,False,0.0,1.0,,30,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_perpendicularAutoparkEnabled,1.0,0.0,False,0.0,1.0,,31,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_nextBranchDist,10.0,0.0,False,0.0,300.0,,32,5,little_endian,False,,m,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_controlledAccess,1.0,0.0,False,,,,37,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_nextBranchLeftOffRamp,1.0,0.0,False,,,,38,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_nextBranchRightOffRamp,1.0,0.0,False,,,,39,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_rejectLeftLane,1.0,0.0,False,,,,40,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_rejectRightLane,1.0,0.0,False,,,,41,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_rejectHPP,1.0,0.0,False,,,,42,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_rejectNav,1.0,0.0,False,,,,43,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_rejectLeftFreeSpace,1.0,0.0,False,,,,44,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_rejectRightFreeSpace,1.0,0.0,False,,,,45,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_rejectAutosteer,1.0,0.0,False,,,,46,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_rejectHandsOn,1.0,0.0,False,,,,47,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_acceptBottsDots,1.0,0.0,False,,,,48,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_autosteerRestricted,1.0,0.0,False,,,,49,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_pmmEnabled,1.0,0.0,False,,,,50,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_scaEnabled,1.0,0.0,False,,,,51,1,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_mapDataCounter,1.0,0.0,False,,,,52,4,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_mapDataChecksum,1.0,0.0,False,,,,56,8,little_endian,False,,,['DAS'],,UI_driverAssistMapData,968,tesla_can.dbc
+UI_roadSign,1.0,0.0,False,,,,0,8,little_endian,False,,,['DAS'],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_dummyData,1.0,0.0,False,,,,8,1,little_endian,False,,,[],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_stopSignStopLineDist,0.25,-8.0,False,-8.0,247.5,,8,10,little_endian,False,,m,[],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_trafficLightStopLineDist,0.25,-8.0,False,-8.0,247.5,,8,10,little_endian,False,,m,[],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_baseMapSpeedLimitMPS,0.25,0.0,False,0.0,63.75,,8,8,little_endian,False,,m/s,['DAS'],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_meanFleetSplineSpeedMPS,0.25,0.0,False,0.0,63.75,,8,8,little_endian,False,,m/s,['DAS'],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_currSplineIdFull,1.0,0.0,False,0.0,1.0,,8,32,little_endian,False,,,['APP'],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_bottomQrtlFleetSpeedMPS,0.25,0.0,False,0.0,63.75,,16,8,little_endian,False,,m/s,['DAS'],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_medianFleetSpeedMPS,0.25,0.0,False,0.0,63.75,,16,8,little_endian,False,,m/s,['DAS'],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_stopSignStopLineConf,1.0,0.0,False,0.0,100.0,,18,7,little_endian,False,,,[],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_trafficLightStopLineConf,1.0,0.0,False,0.0,100.0,,18,7,little_endian,False,,,[],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_topQrtlFleetSpeedMPS,0.25,0.0,False,0.0,63.75,,24,8,little_endian,False,,m/s,['DAS'],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_meanFleetSplineAccelMPS2,0.05,-6.35,False,-6.35,6.4,,24,8,little_endian,False,,m/s^2,['DAS'],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_rampType,1.0,0.0,False,0.0,7.0,,32,3,little_endian,False,,,['DAS'],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_splineLocConfidence,1.0,0.0,False,0.0,100.0,,40,7,little_endian,False,,,['DAS'],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_splineID,1.0,0.0,False,0.0,15.0,,48,4,little_endian,False,,,[],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_roadSignCounter,1.0,0.0,False,,,,52,4,little_endian,False,,,[],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_roadSignChecksum,1.0,0.0,False,,,,56,8,little_endian,False,,,[],,UI_driverAssistRoadSign,568,tesla_can.dbc
+UI_radarTargetDx,1.0,-95.0,False,-95.0,160.0,,0,8,little_endian,False,,m,['DAS'],,UI_radarMapData,696,tesla_can.dbc
+UI_radarTargetDxEnd,1.0,0.0,False,0.0,255.0,,8,8,little_endian,False,,m,['DAS'],,UI_radarMapData,696,tesla_can.dbc
+UI_radarTargetTrustMap,1.0,0.0,False,0.0,1.0,,16,1,little_endian,False,,,['DAS'],,UI_radarMapData,696,tesla_can.dbc
+UI_radarEnableBraking,1.0,0.0,False,0.0,1.0,,17,1,little_endian,False,,,['DAS'],,UI_radarMapData,696,tesla_can.dbc
+UI_radarMapDataCounter,1.0,0.0,False,,,,52,4,little_endian,False,,,['DAS'],,UI_radarMapData,696,tesla_can.dbc
+UI_radarMapDataChecksum,1.0,0.0,False,,,,56,8,little_endian,False,,,['DAS'],,UI_radarMapData,696,tesla_can.dbc
+UI_roadCurvC0,0.02,0.0,False,-20.48,20.46,,0,11,little_endian,True,,m,['DAS'],,UI_roadCurvature,712,tesla_can.dbc
+UI_roadCurvC1,0.00075,0.0,False,-0.384,0.38325,,11,10,little_endian,True,,1,['DAS'],,UI_roadCurvature,712,tesla_can.dbc
+UI_roadCurvC2,7.5e-06,0.0,False,-0.03072,0.03071625,,21,14,little_endian,True,,1/m,['DAS'],,UI_roadCurvature,712,tesla_can.dbc
+UI_roadCurvC3,3e-08,0.0,False,-0.00012288,0.00012285,,35,13,little_endian,True,,1/m2,['DAS'],,UI_roadCurvature,712,tesla_can.dbc
+UI_roadCurvRange,4.0,0.0,False,0.0,252.0,,48,6,little_endian,False,,m,['DAS'],,UI_roadCurvature,712,tesla_can.dbc
+UI_roadCurvHealth,1.0,0.0,False,,,,54,2,little_endian,False,,,['DAS'],,UI_roadCurvature,712,tesla_can.dbc
+UI_roadCurvChecksum,1.0,0.0,False,,,,56,8,little_endian,False,,,[],,UI_roadCurvature,712,tesla_can.dbc
+UI_solarAzimuthAngle,1.0,0.0,False,0.0,360.0,,0,16,little_endian,True,,deg,['APP'],,UI_solarData,582,tesla_can.dbc
+UI_solarAzimuthAngleCarRef,1.0,0.0,False,-180.0,180.0,,16,9,little_endian,True,,deg,['APP'],,UI_solarData,582,tesla_can.dbc
+UI_isSunUp,1.0,0.0,False,,,,25,1,little_endian,False,,,[],,UI_solarData,582,tesla_can.dbc
+UI_solarElevationAngle,1.0,0.0,False,-90.0,90.0,,32,8,little_endian,True,,deg,['APP'],,UI_solarData,582,tesla_can.dbc
+UI_touchActive,1.0,0.0,False,,,,0,1,little_endian,False,,,['IC'],,UI_status,824,tesla_can.dbc
+UI_audioActive,1.0,0.0,False,,,,1,1,little_endian,False,,,['IC'],,UI_status,824,tesla_can.dbc
+UI_bluetoothActive,1.0,0.0,False,,,,2,1,little_endian,False,,,['IC'],,UI_status,824,tesla_can.dbc
+UI_cellActive,1.0,0.0,False,,,,3,1,little_endian,False,,,['IC'],,UI_status,824,tesla_can.dbc
+UI_displayReady,1.0,0.0,False,,,,4,1,little_endian,False,,,['IC'],,UI_status,824,tesla_can.dbc
+UI_gpsActive,1.0,0.0,False,,,,5,1,little_endian,False,,,['IC'],,UI_status,824,tesla_can.dbc
+UI_wifiConnected,1.0,0.0,False,,,,6,1,little_endian,False,,,"['IC', 'APP']",,UI_status,824,tesla_can.dbc
+UI_systemActive,1.0,0.0,False,,,,7,1,little_endian,False,,,['IC'],,UI_status,824,tesla_can.dbc
+UI_xmActive,1.0,0.0,False,,,,8,1,little_endian,False,,,['IC'],,UI_status,824,tesla_can.dbc
+UI_displayOn,1.0,0.0,False,,,,9,1,little_endian,False,,,"['IC', 'APP']",,UI_status,824,tesla_can.dbc
+UI_readyForDrive,1.0,0.0,False,,,,10,1,little_endian,False,,,['IC'],,UI_status,824,tesla_can.dbc
+UI_cellConnected,1.0,0.0,False,,,,11,1,little_endian,False,,,"['IC', 'APP']",,UI_status,824,tesla_can.dbc
+UI_vpnActive,1.0,0.0,False,,,,12,1,little_endian,False,,,"['IC', 'APP']",,UI_status,824,tesla_can.dbc
+UI_wifiActive,1.0,0.0,False,,,,13,1,little_endian,False,,,['IC'],,UI_status,824,tesla_can.dbc
+UI_cameraActive,1.0,0.0,False,,,,14,1,little_endian,False,,,"['IC', 'APP']",,UI_status,824,tesla_can.dbc
+UI_usbActive,1.0,0.0,False,,,,15,1,little_endian,False,,,['IC'],,UI_status,824,tesla_can.dbc
+UI_screenshotActive,1.0,0.0,False,,,,16,1,little_endian,False,,,"['IC', 'APP']",,UI_status,824,tesla_can.dbc
+UI_monitorModemPower,1.0,0.0,False,,,,17,1,little_endian,False,,,[],,UI_status,824,tesla_can.dbc
+UI_factoryReset,1.0,0.0,False,0.0,3.0,,18,2,little_endian,False,,,[],,UI_status,824,tesla_can.dbc
+UI_cellNetworkTechnology,1.0,0.0,False,0.0,15.0,,20,4,little_endian,False,,,['APP'],,UI_status,824,tesla_can.dbc
+UI_tegraCoreTemperature,1.0,-64.0,False,,,,24,8,little_endian,False,,deg C,['IC'],,UI_status,824,tesla_can.dbc
+UI_tegraAmbientTemperature,1.0,-64.0,False,,,,32,8,little_endian,False,,deg C,['IC'],,UI_status,824,tesla_can.dbc
+UI_googleWifiUsages,1.0,0.0,False,,,,40,8,little_endian,False,,,[],,UI_status,824,tesla_can.dbc
+UI_autopilotTrial,1.0,0.0,False,,,,48,2,little_endian,False,,,['APP'],,UI_status,824,tesla_can.dbc
+UI_cellSignalBars,1.0,0.0,False,0.0,7.0,,50,3,little_endian,False,,,['APP'],,UI_status,824,tesla_can.dbc
+UI_hardwareType,1.0,0.0,False,0.0,3.0,,53,2,little_endian,False,,,['APP'],,UI_status,824,tesla_can.dbc
+UI_developmentCar,1.0,0.0,False,,,,55,1,little_endian,False,,,[],,UI_status,824,tesla_can.dbc
+UI_cellReceiverPower,1.0,-128.0,False,-128.0,127.0,,56,8,little_endian,False,,dB,['APP'],,UI_status,824,tesla_can.dbc
+UI_TCR_enable,1.0,0.0,False,,,,0,1,little_endian,False,,,['DAS'],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_moveStateStanding,1.0,0.0,False,,,,1,1,little_endian,False,,,['DAS'],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_moveStateStopped,1.0,0.0,False,,,,2,1,little_endian,False,,,['DAS'],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_moveStateMoving,1.0,0.0,False,,,,3,1,little_endian,False,,,['DAS'],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_moveStateIndeterm,1.0,0.0,False,,,,4,1,little_endian,False,,,['DAS'],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_classConstElem,1.0,0.0,False,,,,5,1,little_endian,False,,,['DAS'],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_classMovingPed,1.0,0.0,False,,,,6,1,little_endian,False,,,['DAS'],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_classMovingTwoWheel,1.0,0.0,False,,,,7,1,little_endian,False,,,['DAS'],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_classMovingFourWheel,1.0,0.0,False,,,,8,1,little_endian,False,,,['DAS'],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_classUnknown,1.0,0.0,False,,,,9,1,little_endian,False,,,['DAS'],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_downSampleFactor,1.0,0.0,False,0.0,15.0,,16,4,little_endian,False,,,[],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_wExist,1.0,0.0,False,0.0,31.0,,24,5,little_endian,False,,,[],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_vehSpeed,1.0,0.0,False,,,,32,8,little_endian,False,,,[],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_minRCS,0.25,-14.0,False,-14.0,49.75,,40,8,little_endian,False,,dB,[],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_maxDy,0.5,0.0,False,0.0,15.5,,48,5,little_endian,False,,m,[],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_maxObjects,1.0,0.0,False,0.0,31.0,,56,5,little_endian,False,,,[],,UI_telemetryControl,1064,tesla_can.dbc
+UI_TCR_maxRoadClass,1.0,0.0,False,0.0,7.0,,61,3,little_endian,False,,,[],,UI_telemetryControl,1064,tesla_can.dbc
+driverBrakeStatus,1.0,0.0,False,0,3,"OrderedDict([(2, 'APPLIED'), (1, 'NOT_APPLIED')])",2,2,little_endian,False,,,['XXX'],,BrakeMessage,522,tesla_can.dbc
+autopilotStatus,1.0,0.0,False,,,"OrderedDict([(5, 'ACTIVE_NAVIGATE_ON_AUTOPILOT'), (4, 'ACTIVE_2'), (3, 'ACTIVE_1'), (2, 'AVAILABLE'), (1, 'UNAVAILABLE'), (0, 'DISABLED')])",0,4,little_endian,False,,,['XXX'],,AutopilotStatus,921,tesla_can.dbc
