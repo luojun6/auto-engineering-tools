@@ -20,8 +20,14 @@ def load_words():
         raw_words_alpha = zip.read('words_alpha.txt')
         words_alpha = set(raw_words_alpha.split())
         
-    words.update(words_alpha)        
-    return words
+    words.update(words_alpha)    
+    
+    encoding = "utf-8"
+    words_list = list()
+    for word in list(words):
+        words_list.append(word.decode(encoding))
+        
+    return words_list
 
 
 def get_file_by_suffix(suffix_name, dir_name=None, inclusive_keyword=None, exclusive_keyword=None):

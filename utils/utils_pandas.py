@@ -70,7 +70,8 @@ def fetch_signals_from_merged_table(merged_table: pd.DataFrame,
     
     # Remove regular english words
     en_words = load_words() # from utilities.files
-    raw_signals = unique_words[~unique_words.str.lower().isin(en_words)].copy()
+    en_words_series = pd.Series(en_words).str.lower()
+    raw_signals = unique_words[~unique_words.str.lower().isin(en_words_series)].copy()
     
     if invalid_signal_words:
         raw_signals = raw_signals[~raw_signals.isin(invalid_signal_words)]
